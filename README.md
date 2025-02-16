@@ -1,6 +1,6 @@
 ## Implementando o OAuth2.0 na prática.
 
-### Este projeto visa mostrar como é o funcionamento do Oauth2.0 um padrão projetado para permitir que um site ou aplicativo acesse recursos hospedados por outros aplicativos da web em nome de um usuário.
+#### Este projeto visa mostrar como é o funcionamento do Oauth2.0 um padrão projetado para permitir que um site ou aplicativo acesse recursos hospedados por outros aplicativos da web em nome de um usuário.
 
 Para executar o projeto:
 
