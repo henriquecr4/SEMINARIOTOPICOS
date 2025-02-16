@@ -42,7 +42,7 @@ No frontend, usei fetch para chamar a API do GitHub e obter os dados do usuário
 
 ##### 5. Exibição das Informações do Usuário
 
-Exibi o nome do usuário na página após a autenticação bem-sucedida.
+Exibe o nome do usuário na página após a autenticação bem-sucedida.
 
 ##### 6. Testes e Ajustes
 
