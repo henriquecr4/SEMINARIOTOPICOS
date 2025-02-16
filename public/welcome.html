@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta http-equiv="X-UA-Compatible" content="ie=edge">
+	<title>Hello</title>
+</head>
+
+<body>
+
+</body>
+<script>
+	
+	const query = window.location.search.substring(1)
+	const token = query.split('access_token=')[1]
+
+	//Chamar a API de informações do usuário usando a biblioteca do navegador fetch
+	fetch('https://api.github.com/user', {
+			headers: {
+				Accept: "application/vnd.github.v3+json",
+				// incluir o token no cabeçalho de autorização
+				Authorization: 'token ' + token
+			}
+		})
+		// Analisar a resposta como JSON
+		.then(res => res.json())
+		.then(res => {
+			// Assim que obtivermos a resposta, escreva "welcome <nome do usuário>" no corpo dos documentos
+			const nameNode = document.createTextNode(`Welcome, ${res.name}`)
+			document.body.appendChild(nameNode)
+		})
+</script>
+
+</html>
